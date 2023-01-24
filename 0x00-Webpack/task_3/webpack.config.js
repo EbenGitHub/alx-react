@@ -61,8 +61,8 @@ module.exports = {
   //devTools
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    static: path.resolve(__dirname, 'public'),
+    contentBase: path.join(__dirname, './public'),
+    static: path.resolve(__dirname, './public'),
     port: 8564, //default 8080
     open: true,
     hot: true,
