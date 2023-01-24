@@ -16,8 +16,20 @@ module.exports = {
             //css
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             //images
-            { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, type: 'asset/resource' },
-        ]
+            { test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, 
+              type: 'asset/resource',
+              use: [
+                'file-loader',
+                  {
+                    loader: 'image-webpack-loader',
+                    options: {
+                      bypassOnDebug: true,
+                      disable: true,
+                    },
+                  },
+              ],
+            },
+          ]
     },
     //Perfomance
     performance: {
