@@ -13,5 +13,5 @@ test('Prints the correct year', () => {
   });
   
   test('getLatestNotification return correct value', () => {
-    expect(getLatestNotification()).toBe(<span><strong>Urgent requirement</strong> - complete by EOD</span>);
+    expect(String(getLatestNotification())).toBe("<span><strong>Urgent requirement</strong> - complete by EOD</span>");
   });
