@@ -7,6 +7,7 @@
   width: 100%;
   border-bottom: var(--holberton-line) solid var(--holberton-color);
   display: flex;
+  margin-top: 12rem;
 }
 
 .App-header img {
@@ -27,6 +28,11 @@
 .App-body p {
   margin: 3.5rem;
   font-family: sans-serif;
+}
+
+.App-body label,
+.App-body button {
+  margin: auto 5px;
 }
 
 .App-footer {
