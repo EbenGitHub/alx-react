@@ -1,0 +1,8 @@
+.Notifications {
+  border: 3px dashed rgb(212, 155, 9);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  margin-top: 20px;
+}
