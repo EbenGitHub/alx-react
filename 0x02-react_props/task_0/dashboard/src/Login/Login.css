@@ -1,0 +1,9 @@
+.App-body p {
+  margin: 3.5rem;
+  font-family: sans-serif;
+}
+
+.App-body label,
+.App-body button {
+  margin: auto 5px;
+}

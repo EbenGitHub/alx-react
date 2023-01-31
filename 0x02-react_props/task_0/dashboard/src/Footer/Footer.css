@@ -1,0 +1,13 @@
+.App-footer {
+  border-top: var(--holberton-line) solid var(--holberton-color);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.App-footer p {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 0.8rem;
+}
