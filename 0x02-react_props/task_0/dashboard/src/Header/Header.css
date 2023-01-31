@@ -1,0 +1,21 @@
+.App-header {
+  width: 100%;
+  border-bottom: var(--holberton-line) solid var(--holberton-color);
+  display: flex;
+  margin-top: 12rem;
+}
+
+.App-header img {
+  width: 20%;
+  height: 20%;
+  margin: auto 10px;
+}
+
+.App-header h1 {
+  color: var(--holberton-color);
+  text-align: left;
+  font-weight: bold;
+  margin: auto 0;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
