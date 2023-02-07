@@ -1,10 +1,13 @@
-th {
-    border-bottom: 1px solid gray;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.course-list th[colspan='2'] {
+  text-align: center;
 }
 
-td {
-    padding-left: 3px;
+.course-list th {
+  text-align: left;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.course-list td {
+  text-align: left;
 }

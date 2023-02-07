@@ -1,27 +1,41 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { StyleSheet, css } from 'aphrodite';
 
 class BodySection extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const { children, title } = this.props;
     return (
-      <div className='bodySection'>
-        <h2>{this.props.title}</h2>
-        {this.props.children}
+      <div className={css(styles.bodySection)}>
+        <h2 className={css(styles.heading)}>{title}</h2>
+        {children}
       </div>
     );
   }
 }
 
-BodySection. defaultProps = {
-	children: <React.Fragment />
+BodySection.defaultProps = {
+  title: '',
 };
 
 BodySection.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element
-  ])
+  title: PropTypes.string,
 };
+
+const styles = StyleSheet.create({
+  bodySection: {
+    width: '100%',
+    marginTop: '160px',
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  heading: {
+    width: '100%',
+  },
+});
 
 export default BodySection;
